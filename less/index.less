@@ -111,10 +111,15 @@ section {
   display: block;
 }
 
+button {
+  font-family: "IBM Plex Mono", monospace, Arial, "Helvetica Neue", Helvetica,
+    Arial, "Lucida Grande", sans-serif;
+}
+
 body {
   line-height: 1;
-  font-family: Arial, "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
-    sans-serif;
+  font-family: "IBM Plex Mono", monospace, Arial, "Helvetica Neue", Helvetica,
+    Arial, "Lucida Grande", sans-serif;
   //   font-weight: 300;
 
   @media @tablet {
@@ -147,6 +152,7 @@ body {
       color: white;
       font-weight: bold;
       font-size: 3.2rem;
+      cursor: default;
     }
 
     nav.header-nav-links {
@@ -202,6 +208,7 @@ body {
           color: #3f3f67;
           padding-bottom: 20px;
           font-weight: normal;
+          cursor: default;
         }
 
         p {
@@ -209,6 +216,7 @@ body {
           color: #4c4dc3;
           padding-bottom: 20px;
           font-weight: normal;
+          cursor: default;
         }
 
         li {
@@ -216,6 +224,8 @@ body {
           color: #999999;
           padding-bottom: 10px;
           list-style-position: inside;
+          line-height: normal;
+          cursor: default;
         }
 
         button {
@@ -229,6 +239,13 @@ body {
           justify-content: center;
           align-self: center;
           margin-top: 40px;
+          cursor: pointer;
+        }
+
+        button:hover {
+          color: #ff65a7;
+          background-color: white;
+          border: 1px solid #ff65a7;
         }
       }
     }
@@ -253,7 +270,7 @@ body {
           padding-top: 60px;
           padding-bottom: 40px;
           font-weight: normal;
-          margin-left: 1%;
+          cursor: default;
         }
 
         h3 {
@@ -265,6 +282,7 @@ body {
           font-weight: normal;
           text-align: end;
           margin-right: 1%;
+          cursor: pointer;
         }
       }
 
@@ -308,6 +326,13 @@ body {
             display: flex;
             justify-content: center;
             align-self: center;
+            cursor: pointer;
+          }
+
+          button:hover {
+            color: #ff65a7;
+            background-color: white;
+            border: 1px solid #ff65a7;
           }
         }
       }
@@ -328,6 +353,7 @@ body {
         justify-content: center;
         font-size: 3rem;
         color: #999999;
+        cursor: default;
 
         // .filter-lrabel {
         //   display: flex;
@@ -342,6 +368,14 @@ body {
 
           .tab {
             border: 1px solid #999999;
+            padding: 10px;
+            cursor: pointer;
+          }
+
+          .tab:hover {
+            border: 1px solid white;
+            background-color: #999999;
+            color: white;
             padding: 10px;
             cursor: pointer;
           }
@@ -369,16 +403,23 @@ body {
               width: 33%;
               font-size: 2rem;
               color: #999999;
+              cursor: default;
             }
 
             p.domain-appraisal {
               display: flex;
-              justify-content: center;
+              justify-content: flex-end;
+              cursor: pointer;
+            }
+
+            p.domain-appraisal:hover {
+              color: #ff65a7;
             }
 
             p.domain-price {
               display: flex;
               justify-content: center;
+              cursor: default;
             }
           }
 
@@ -392,6 +433,13 @@ body {
             display: flex;
             justify-content: center;
             align-self: center;
+            cursor: pointer;
+          }
+
+          button:hover {
+            color: #ff65a7;
+            background-color: white;
+            border: 1px solid #ff65a7;
           }
         }
       }
@@ -419,6 +467,7 @@ body {
         color: white;
         font-weight: bold;
         font-size: 3.2rem;
+        cursor: default;
       }
 
       nav.footer-nav-links {
@@ -456,6 +505,7 @@ body {
       width: 100%;
       color: white;
       font-size: 1.2rem;
+      cursor: default;
     }
   }
 }

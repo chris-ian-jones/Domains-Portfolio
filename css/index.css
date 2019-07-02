@@ -103,9 +103,12 @@ nav,
 section {
   display: block;
 }
+button {
+  font-family: "IBM Plex Mono", monospace, Arial, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
 body {
   line-height: 1;
-  font-family: Arial, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "IBM Plex Mono", monospace, Arial, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 @media (max-width: 800px) {
   body {
@@ -138,6 +141,7 @@ body header.header-nav-toolbar h1 {
   color: white;
   font-weight: bold;
   font-size: 3.2rem;
+  cursor: default;
 }
 body header.header-nav-toolbar nav.header-nav-links {
   width: 33%;
@@ -187,18 +191,22 @@ body article .hero-header .hero-text-container h1 {
   color: #3f3f67;
   padding-bottom: 20px;
   font-weight: normal;
+  cursor: default;
 }
 body article .hero-header .hero-text-container p {
   font-size: 3rem;
   color: #4c4dc3;
   padding-bottom: 20px;
   font-weight: normal;
+  cursor: default;
 }
 body article .hero-header .hero-text-container li {
   font-size: 2rem;
   color: #999999;
   padding-bottom: 10px;
   list-style-position: inside;
+  line-height: normal;
+  cursor: default;
 }
 body article .hero-header .hero-text-container button {
   width: 30rem;
@@ -211,6 +219,12 @@ body article .hero-header .hero-text-container button {
   justify-content: center;
   align-self: center;
   margin-top: 40px;
+  cursor: pointer;
+}
+body article .hero-header .hero-text-container button:hover {
+  color: #ff65a7;
+  background-color: white;
+  border: 1px solid #ff65a7;
 }
 body article .featured-domains {
   display: flex;
@@ -232,7 +246,7 @@ body article .featured-domains .premium-title-container h2 {
   padding-top: 60px;
   padding-bottom: 40px;
   font-weight: normal;
-  margin-left: 1%;
+  cursor: default;
 }
 body article .featured-domains .premium-title-container h3 {
   width: 50%;
@@ -243,6 +257,7 @@ body article .featured-domains .premium-title-container h3 {
   font-weight: normal;
   text-align: end;
   margin-right: 1%;
+  cursor: pointer;
 }
 body article .featured-domains .featured-domains-container {
   display: flex;
@@ -281,6 +296,12 @@ body article .featured-domains .featured-domains-container section button {
   display: flex;
   justify-content: center;
   align-self: center;
+  cursor: pointer;
+}
+body article .featured-domains .featured-domains-container section button:hover {
+  color: #ff65a7;
+  background-color: white;
+  border: 1px solid #ff65a7;
 }
 body article .domain-list-container {
   width: 100rem;
@@ -298,6 +319,7 @@ body article .domain-list-container .tabs {
   justify-content: center;
   font-size: 3rem;
   color: #999999;
+  cursor: default;
 }
 body article .domain-list-container .tabs .filter {
   width: 66%;
@@ -308,6 +330,13 @@ body article .domain-list-container .tabs .filter {
 }
 body article .domain-list-container .tabs .filter .tab {
   border: 1px solid #999999;
+  padding: 10px;
+  cursor: pointer;
+}
+body article .domain-list-container .tabs .filter .tab:hover {
+  border: 1px solid white;
+  background-color: #999999;
+  color: white;
   padding: 10px;
   cursor: pointer;
 }
@@ -332,14 +361,20 @@ body article .domain-list-container .domains-sections section.domain .domain-tex
   width: 33%;
   font-size: 2rem;
   color: #999999;
+  cursor: default;
 }
 body article .domain-list-container .domains-sections section.domain .domain-text p.domain-appraisal {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+body article .domain-list-container .domains-sections section.domain .domain-text p.domain-appraisal:hover {
+  color: #ff65a7;
 }
 body article .domain-list-container .domains-sections section.domain .domain-text p.domain-price {
   display: flex;
   justify-content: center;
+  cursor: default;
 }
 body article .domain-list-container .domains-sections section.domain button {
   width: 15rem;
@@ -351,6 +386,12 @@ body article .domain-list-container .domains-sections section.domain button {
   display: flex;
   justify-content: center;
   align-self: center;
+  cursor: pointer;
+}
+body article .domain-list-container .domains-sections section.domain button:hover {
+  color: #ff65a7;
+  background-color: white;
+  border: 1px solid #ff65a7;
 }
 body footer {
   display: flex;
@@ -373,6 +414,7 @@ body footer .footer-nav-container h1 {
   color: white;
   font-weight: bold;
   font-size: 3.2rem;
+  cursor: default;
 }
 body footer .footer-nav-container nav.footer-nav-links {
   width: 33%;
@@ -404,4 +446,5 @@ body footer p {
   width: 100%;
   color: white;
   font-size: 1.2rem;
+  cursor: default;
 }
