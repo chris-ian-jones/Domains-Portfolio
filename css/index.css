@@ -285,6 +285,7 @@ body article .featured-domains .featured-domains-container section button {
 body article .domain-list-container {
   width: 100rem;
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   margin-top: 60px;
@@ -295,20 +296,61 @@ body article .domain-list-container .tabs {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #999999;
 }
 body article .domain-list-container .tabs .filter {
   width: 66%;
   display: flex;
   justify-content: space-evenly;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #999999;
 }
 body article .domain-list-container .tabs .filter .tab {
   border: 1px solid #999999;
   padding: 10px;
   cursor: pointer;
+}
+body article .domain-list-container .domains-sections {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+body article .domain-list-container .domains-sections section.domain {
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+  align-items: center;
+}
+body article .domain-list-container .domains-sections section.domain .domain-text {
+  width: 100%;
+  display: flex;
+}
+body article .domain-list-container .domains-sections section.domain .domain-text p {
+  width: 33%;
+  font-size: 2rem;
+  color: #999999;
+}
+body article .domain-list-container .domains-sections section.domain .domain-text p.domain-appraisal {
+  display: flex;
+  justify-content: center;
+}
+body article .domain-list-container .domains-sections section.domain .domain-text p.domain-price {
+  display: flex;
+  justify-content: center;
+}
+body article .domain-list-container .domains-sections section.domain button {
+  width: 15rem;
+  height: 4rem;
+  color: white;
+  background-color: #ff65a7;
+  font-size: 2rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 body footer {
   display: flex;
