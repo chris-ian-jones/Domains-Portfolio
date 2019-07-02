@@ -153,6 +153,9 @@ body header.header-nav-toolbar nav.header-nav-links a {
   color: white;
   font-weight: bold;
 }
+body header.header-nav-toolbar nav.header-nav-links a:hover {
+  color: #3f3f67;
+}
 body header.header-nav-toolbar nav.header-social-links {
   width: 33%;
   display: flex;
@@ -163,6 +166,9 @@ body header.header-nav-toolbar nav.header-social-links a {
   color: white;
   font-weight: bold;
   padding-left: 20px;
+}
+body header.header-nav-toolbar nav.header-social-links a:hover {
+  color: #3f3f67;
 }
 body article {
   display: flex;
@@ -426,6 +432,9 @@ body footer .footer-nav-container nav.footer-nav-links a {
   color: white;
   font-weight: bold;
 }
+body footer .footer-nav-container nav.footer-nav-links a:hover {
+  color: #3f3f67;
+}
 body footer .footer-nav-container nav.footer-social-links {
   width: 33%;
   display: flex;
@@ -436,6 +445,9 @@ body footer .footer-nav-container nav.footer-social-links a {
   color: white;
   font-weight: bold;
   padding-left: 20px;
+}
+body footer .footer-nav-container nav.footer-social-links a:hover {
+  color: #3f3f67;
 }
 body footer p {
   display: flex;
