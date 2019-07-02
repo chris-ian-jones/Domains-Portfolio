@@ -120,6 +120,9 @@ body {
   line-height: 1;
   font-family: "IBM Plex Mono", monospace, Arial, "Helvetica Neue", Helvetica,
     Arial, "Lucida Grande", sans-serif;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
   //   font-weight: 300;
 
   @media @tablet {
@@ -450,6 +453,54 @@ body {
             border: 1px solid #ff65a7;
           }
         }
+      }
+    }
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 3rem;
+      color: #999999;
+      margin-bottom: 30px;
+      cursor: default;
+    }
+
+    .sold-domains-container {
+      display: flex;
+      width: 100rem;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    p.left-button,
+    p.right-button {
+      font-size: 5rem;
+      color: #ff65a7;
+      cursor: pointer;
+    }
+
+    p.left-button:hover,
+    p.right-button:hover {
+      font-size: 5rem;
+      color: #ee428c;
+      cursor: pointer;
+    }
+
+    .sold-domain-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 2rem;
+        margin-top: 20px;
+        color: #999999;
       }
     }
   }
