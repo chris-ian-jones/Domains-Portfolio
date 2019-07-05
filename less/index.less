@@ -198,7 +198,7 @@ body {
     align-items: center;
 
     .hero-header {
-      background-image: url(/img/blockchain-domains-header.svg);
+      background-image: url(/Users/chrisjones/Documents/git/Domains-Portfolio/img/blockchain-domains-header.svg);
       height: 100vh;
       width: 100%;
       background-position: center center;
@@ -366,10 +366,6 @@ body {
         color: #999999;
         cursor: default;
 
-        // .filter-lrabel {
-        //   display: flex;
-        // }
-
         .filter {
           width: 66%;
           display: flex;
@@ -384,11 +380,27 @@ body {
           }
 
           .tab:hover {
+            border: 1px solid #ff65a7;
+            // background-color: #999999;
+            color: #ff65a7;
+            padding: 10px;
+            cursor: pointer;
+          }
+
+          .active-tab {
             border: 1px solid white;
             background-color: #999999;
             color: white;
             padding: 10px;
             cursor: pointer;
+          }
+
+          .active-tab:hover {
+            border: 1px solid white;
+            background-color: #999999;
+            color: white;
+            padding: 10px;
+            cursor: default;
           }
         }
       }
@@ -400,7 +412,7 @@ body {
 
         section.domain {
           width: 100%;
-          display: flex;
+          display: none;
           padding-top: 20px;
           padding-bottom: 20px;
           border-bottom: 1px solid lightgrey;
@@ -452,6 +464,10 @@ body {
             background-color: white;
             border: 1px solid #ff65a7;
           }
+        }
+
+        section.active-domain {
+          display: flex;
         }
       }
     }
