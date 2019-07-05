@@ -1,3 +1,67 @@
+main.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form-container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container h2 {
+  font-size: 4.5rem;
+  color: #3f3f67;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  font-weight: normal;
+  cursor: default;
+}
+.form-container p {
+  color: #999999;
+  padding-bottom: 30px;
+  font-size: 2rem;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 2rem;
+  color: #4c4dc3;
+  padding-bottom: 20px;
+  font-weight: normal;
+  cursor: default;
+}
+.form-container form input {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  display: flex;
+  color: #3f3f67;
+}
+.form-container form input[type="button"],
+.form-container form input[type="submit"],
+.form-container form input[type="reset"] {
+  background-color: #ff9770;
+  border: 1px solid #ff9770;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3rem;
+}
+.form-container form input[type="button"]:hover,
+.form-container form input[type="submit"]:hover,
+.form-container form input[type="reset"]:hover {
+  background-color: white;
+  border: 1px solid #ff9770;
+  color: #ff9770;
+}
+.form-container form .button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -218,7 +282,7 @@ body article .hero-header .hero-text-container button {
   width: 30rem;
   height: 6rem;
   color: white;
-  background-color: #ff65a7;
+  background-color: #ff9770;
   font-size: 2rem;
   border-radius: 3rem;
   display: flex;
@@ -228,9 +292,9 @@ body article .hero-header .hero-text-container button {
   cursor: pointer;
 }
 body article .hero-header .hero-text-container button:hover {
-  color: #ff65a7;
+  color: #ff9770;
   background-color: white;
-  border: 1px solid #ff65a7;
+  border: 1px solid #ff9770;
 }
 body article .featured-domains {
   display: flex;
@@ -257,7 +321,7 @@ body article .featured-domains .premium-title-container h2 {
 body article .featured-domains .premium-title-container h3 {
   width: 50%;
   font-size: 1.5rem;
-  color: #ff65a7;
+  color: #ff9770;
   padding-top: 60px;
   padding-bottom: 40px;
   font-weight: normal;
@@ -296,7 +360,7 @@ body article .featured-domains .featured-domains-container section button {
   width: 23rem;
   height: 4rem;
   color: white;
-  background-color: #ff65a7;
+  background-color: #ff9770;
   font-size: 2rem;
   border-radius: 3rem;
   display: flex;
@@ -305,9 +369,9 @@ body article .featured-domains .featured-domains-container section button {
   cursor: pointer;
 }
 body article .featured-domains .featured-domains-container section button:hover {
-  color: #ff65a7;
+  color: #ff9770;
   background-color: white;
-  border: 1px solid #ff65a7;
+  border: 1px solid #ff9770;
 }
 body article .domain-list-container {
   width: 100rem;
@@ -340,8 +404,8 @@ body article .domain-list-container .tabs .filter .tab {
   cursor: pointer;
 }
 body article .domain-list-container .tabs .filter .tab:hover {
-  border: 1px solid #ff65a7;
-  color: #ff65a7;
+  border: 1px solid #ff9770;
+  color: #ff9770;
   padding: 10px;
   cursor: pointer;
 }
@@ -388,7 +452,7 @@ body article .domain-list-container .domains-sections section.domain .domain-tex
   cursor: pointer;
 }
 body article .domain-list-container .domains-sections section.domain .domain-text p.domain-appraisal:hover {
-  color: #ff65a7;
+  color: #ff9770;
 }
 body article .domain-list-container .domains-sections section.domain .domain-text p.domain-price {
   display: flex;
@@ -399,7 +463,7 @@ body article .domain-list-container .domains-sections section.domain button {
   width: 15rem;
   height: 4rem;
   color: white;
-  background-color: #ff65a7;
+  background-color: #ff9770;
   font-size: 2rem;
   border-radius: 3rem;
   display: flex;
@@ -408,9 +472,9 @@ body article .domain-list-container .domains-sections section.domain button {
   cursor: pointer;
 }
 body article .domain-list-container .domains-sections section.domain button:hover {
-  color: #ff65a7;
+  color: #ff9770;
   background-color: white;
-  border: 1px solid #ff65a7;
+  border: 1px solid #ff9770;
 }
 body article .domain-list-container .domains-sections section.active-domain {
   display: flex;
@@ -432,16 +496,16 @@ body aside .sold-domains-container {
   display: flex;
   width: 120rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 body aside p.slider-button {
   font-size: 5rem;
-  color: #ff65a7;
+  color: #ff9770;
   cursor: pointer;
 }
 body aside p.slider-button:hover {
   font-size: 5rem;
-  color: #ee428c;
+  color: #ff9770;
   cursor: pointer;
 }
 body aside .sold-domain-info {

@@ -10,8 +10,6 @@ let activeSlidePositionOne = 0;
 let activeSlidePositionTwo = 1;
 let activeSlidePositionThree = 2;
 
-// console.log(activeSlidePositionTwo);
-
 function changeSlide() {
   const soldDomainsSlides = document.querySelectorAll(".sold-domain-info");
   soldDomainsSlides.forEach(soldDomainSlide =>
