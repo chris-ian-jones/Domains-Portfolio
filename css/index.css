@@ -434,20 +434,18 @@ body aside .sold-domains-container {
   align-items: center;
   justify-content: space-evenly;
 }
-body aside p.left-button,
-body aside p.right-button {
+body aside p.slider-button {
   font-size: 5rem;
   color: #ff65a7;
   cursor: pointer;
 }
-body aside p.left-button:hover,
-body aside p.right-button:hover {
+body aside p.slider-button:hover {
   font-size: 5rem;
   color: #ee428c;
   cursor: pointer;
 }
 body aside .sold-domain-info {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -455,6 +453,9 @@ body aside .sold-domain-info p {
   font-size: 2rem;
   margin-top: 20px;
   color: #999999;
+}
+body aside .active-sold-domain {
+  display: flex;
 }
 body footer {
   display: flex;

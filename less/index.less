@@ -494,22 +494,20 @@ body {
       justify-content: space-evenly;
     }
 
-    p.left-button,
-    p.right-button {
+    p.slider-button {
       font-size: 5rem;
       color: #ff65a7;
       cursor: pointer;
     }
 
-    p.left-button:hover,
-    p.right-button:hover {
+    p.slider-button:hover {
       font-size: 5rem;
       color: #ee428c;
       cursor: pointer;
     }
 
     .sold-domain-info {
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: center;
 
@@ -518,6 +516,10 @@ body {
         margin-top: 20px;
         color: #999999;
       }
+    }
+
+    .active-sold-domain {
+      display: flex;
     }
   }
 
