@@ -19,6 +19,13 @@ main.contact {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .form-container {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
 .form-container h2 {
   font-size: 4.5rem;
   color: #3f3f67;
