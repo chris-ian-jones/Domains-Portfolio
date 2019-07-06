@@ -3,6 +3,16 @@ main.contact {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  main.contact {
+    width: 800px;
+  }
+}
+@media (max-width: 500px) {
+  main.contact {
+    width: 500px;
+  }
+}
 .form-container {
   width: 75%;
   display: flex;
