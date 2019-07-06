@@ -41,7 +41,7 @@ main.contact {
 
   form {
     display: flex;
-    width: 100%;
+    width: 50%;
     flex-direction: column;
     align-items: stretch;
     font-size: 2rem;
@@ -49,6 +49,13 @@ main.contact {
     padding-bottom: 20px;
     font-weight: normal;
     cursor: default;
+
+    @media @tablet {
+      width: 75%;
+    }
+    @media @mobile {
+      width: 100%;
+    }
 
     input {
       padding-bottom: 2rem;
