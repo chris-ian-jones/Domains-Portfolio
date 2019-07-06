@@ -120,19 +120,13 @@ body {
   line-height: 1;
   font-family: "IBM Plex Mono", monospace, Arial, "Helvetica Neue", Helvetica,
     Arial, "Lucida Grande", sans-serif;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   font-weight: 300;
 
   @media @tablet {
     width: 800px;
-    justify-content: center;
   }
 
   @media @mobile {
     width: 500px;
-    justify-content: center;
   }
 
   a,
@@ -149,6 +143,14 @@ body {
     align-items: center;
     background-color: #8ec2fe;
 
+    // @media @tablet {
+    //   // width: 100%;
+    // }
+
+    // @media @mobile {
+    //   width: 500px;
+    // }
+
     h1 {
       width: 33%;
       text-decoration: none;
@@ -156,6 +158,15 @@ body {
       font-weight: bold;
       font-size: 3.2rem;
       cursor: default;
+
+      @media @tablet {
+        width: 50%;
+        font-size: 2.5rem;
+      }
+
+      @media @mobile {
+        font-size: 2.1rem;
+      }
     }
 
     nav.header-nav-links {
@@ -163,27 +174,15 @@ body {
       display: flex;
       justify-content: space-around;
 
-      a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
+      @media @tablet {
+        width: 50%;
+        // font-size: 2.5rem;
       }
-
-      a:hover {
-        color: #3f3f67;
-      }
-    }
-
-    nav.header-social-links {
-      width: 33%;
-      display: flex;
-      justify-content: flex-end;
 
       a {
         text-decoration: none;
         color: white;
         font-weight: bold;
-        padding-left: 20px;
       }
 
       a:hover {
@@ -205,6 +204,11 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
 
+      @media @tablet {
+        background-image: none;
+        height: 700px;
+      }
+
       .hero-text-container {
         width: 35%;
         height: 90%;
@@ -213,6 +217,13 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media @tablet {
+          width: 85%;
+          // height: 60%;
+          // justify-self: center;
+          // align-items: center;
+        }
 
         h1 {
           font-size: 5rem;
@@ -251,6 +262,10 @@ body {
           align-self: center;
           margin-top: 40px;
           cursor: pointer;
+
+          @media @tablet {
+            align-self: flex-start;
+          }
         }
 
         button:hover {
@@ -274,6 +289,10 @@ body {
         width: 100rem;
         align-items: center;
 
+        @media @tablet {
+          width: 100%;
+        }
+
         h2 {
           width: 50%;
           font-size: 3rem;
@@ -282,6 +301,10 @@ body {
           padding-bottom: 40px;
           font-weight: normal;
           cursor: default;
+
+          @media @tablet {
+            margin-left: 20px;
+          }
         }
 
         h3 {
@@ -294,6 +317,10 @@ body {
           text-align: end;
           margin-right: 1%;
           cursor: pointer;
+
+          @media @tablet {
+            margin-right: 20px;
+          }
         }
       }
 
@@ -301,6 +328,11 @@ body {
         display: flex;
         width: 100rem;
         flex-wrap: wrap;
+
+        @media @tablet {
+          width: 100%;
+          justify-content: center;
+        }
 
         section {
           display: flex;
@@ -316,6 +348,14 @@ body {
           height: 25rem;
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
             0 3px 6px rgba(0, 0, 0, 0.23);
+
+          @media @tablet {
+            width: 48%;
+          }
+          @media @mobile {
+            width: 75%;
+            margin-bottom: 30px;
+          }
 
           p {
             font-size: 2rem;
@@ -356,6 +396,12 @@ body {
       justify-content: center;
       margin-top: 60px;
       margin-bottom: 60px;
+
+      @media @tablet {
+        width: 95%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+      }
 
       .tabs {
         width: 100%;
@@ -417,21 +463,45 @@ body {
           border-bottom: 1px solid lightgrey;
           align-items: center;
 
+          @media @mobile {
+            display: flex;
+            flex-direction: column;
+          }
+
           .domain-text {
             width: 100%;
             display: flex;
 
+            @media @mobile {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              // justify-content: space-evenly;
+            }
             p {
               width: 33%;
               font-size: 2rem;
               color: #999999;
               cursor: default;
+
+              @media @tablet {
+                width: 40%;
+              }
             }
 
             p.domain-appraisal {
               display: flex;
               justify-content: flex-end;
               cursor: pointer;
+
+              @media @tablet {
+                justify-content: center;
+              }
+
+              @media @mobile {
+                width: 100%;
+                margin-bottom: 15px;
+              }
             }
 
             p.domain-appraisal:hover {
@@ -442,6 +512,22 @@ body {
               display: flex;
               justify-content: center;
               cursor: default;
+
+              @media @tablet {
+                width: 20%;
+              }
+
+              @media @mobile {
+                margin-bottom: 15px;
+              }
+            }
+
+            p.domain-name {
+              @media @mobile {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+              }
             }
           }
 
@@ -491,12 +577,23 @@ body {
       width: 120rem;
       align-items: center;
       justify-content: space-evenly;
+
+      @media @tablet {
+        width: 100%;
+        flex-direction: column;
+      }
     }
 
     p.slider-button {
       font-size: 5rem;
       color: #ff9770;
       cursor: pointer;
+
+      @media @tablet {
+        transform: rotate(90deg);
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
     }
 
     p.slider-button:hover {
@@ -515,6 +612,10 @@ body {
         font-size: 2rem;
         margin-top: 20px;
         color: #999999;
+
+        @media @tablet {
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -545,6 +646,15 @@ body {
         font-weight: bold;
         font-size: 3.2rem;
         cursor: default;
+
+        @media @tablet {
+          width: 50%;
+          font-size: 2.5rem;
+        }
+
+        @media @mobile {
+          font-size: 2.1rem;
+        }
       }
 
       nav.footer-nav-links {
@@ -552,27 +662,15 @@ body {
         display: flex;
         justify-content: space-around;
 
-        a {
-          text-decoration: none;
-          color: white;
-          font-weight: bold;
+        @media @tablet {
+          width: 50%;
+          // font-size: 2.5rem;
         }
-
-        a:hover {
-          color: #3f3f67;
-        }
-      }
-
-      nav.footer-social-links {
-        width: 33%;
-        display: flex;
-        justify-content: flex-end;
 
         a {
           text-decoration: none;
           color: white;
           font-weight: bold;
-          padding-left: 20px;
         }
 
         a:hover {
