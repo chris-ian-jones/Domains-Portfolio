@@ -509,7 +509,6 @@ body article .domain-list-container .domains-sections section.domain {
 }
 @media (max-width: 500px) {
   body article .domain-list-container .domains-sections section.domain {
-    display: flex;
     flex-direction: column;
   }
 }
