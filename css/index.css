@@ -555,6 +555,7 @@ body article .domain-list-container .domains-sections section.domain .domain-tex
 body article .domain-list-container .domains-sections section.domain .domain-text p.domain-appraisal {
   display: flex;
   justify-content: flex-end;
+  color: #ff9770;
   cursor: pointer;
 }
 @media (max-width: 800px) {
@@ -569,7 +570,7 @@ body article .domain-list-container .domains-sections section.domain .domain-tex
   }
 }
 body article .domain-list-container .domains-sections section.domain .domain-text p.domain-appraisal:hover {
-  color: #ff9770;
+  color: hsl(16, 100%, 66%);
 }
 body article .domain-list-container .domains-sections section.domain .domain-text p.domain-price {
   display: flex;
