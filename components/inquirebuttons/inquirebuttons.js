@@ -7,6 +7,10 @@ const domainsSectionButtons = domainsSectionContainer.querySelectorAll(
   "button"
 );
 
+const filteredButtons = Array.from(domainsSectionButtons).filter(
+  button => button.className != "EscrowButtonPrimary"
+);
+
 // function to open the contact page in new tab
 function openContactPage() {
   window.open("contact.html", "_blank");
@@ -17,6 +21,8 @@ function openContactPage() {
 featuredButtons.forEach(featuredButton =>
   featuredButton.addEventListener("click", openContactPage)
 );
-domainsSectionButtons.forEach(domainsSectionButton =>
-  domainsSectionButton.addEventListener("click", openContactPage)
-);
+
+filteredButtons.forEach(filteredButton => {
+  console.log("filteredButton", filteredButton);
+  filteredButton.addEventListener("click", openContactPage);
+});
